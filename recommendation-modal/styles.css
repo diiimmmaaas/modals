@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+@font-face {
+  font-family: Archive;
+  src: url(fonts/Archive.otf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+
+body {
+  font-family: Archive, sans-serif;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 47, 51, 0.90);
+}
+
+.modal_content {
+  background: url("./images/background_recommendation.png") no-repeat;
+  background-size: cover;
+  padding: 0 20px;
+  text-align: center;
+  width: 748px;
+  height: 368px;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.close_icon {
+  position: absolute;
+  top: -75px;
+  right: -5px;
+  cursor: pointer;
+  color: #79E7FF;
+  font-size: 78px;
+  font-family: Roboto sans-serif;
+}
+
+.close_icon:hover,
+.close_icon:focus {
+  color: #FF79FA;
+}
+
+.modal_content__text {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.content_text__box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.images_container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+.circle_icon {
+  position: absolute;
+  left: -5px;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.ring_icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.content_text {
+  color: #FFF;
+  text-align: center;
+  padding-top: 5px;
+  text-transform: uppercase;
+
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.first_image {
+  /*left: 31px;*/
+  left: 7%;
+}
+
+.second_image {
+  left: -11px;
+}
+
+.third_image {
+  left: -25px;
+}
+
+.telegram_btn {
+  width: 471px;
+  height: 63px;
+  flex-shrink: 0;
+  background: #79E7FF;
+  position: absolute;
+  bottom: -31.5px;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.telegram_icon {
+  width: 25px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+.telegram_text {
+  color: #0A0B57;
+  text-align: center;
+  font-family: PT Sans, Serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.telegram_btn:hover {
+  background: #FFFFFF;
+}
+
+.for-big-screen {
+  display: flex;
+}
+
+.for-small-screen {
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  .modal_content {
+    width: 95%;
+  }
+  .modal_content__text {
+    width: 75%;
+  }
+  .telegram_btn {
+    width: 267px;
+  }
+  .telegram_text {
+    font-size: 20px;
+    line-height: 48px;
+  }
+  .for-big-screen {
+    display: none;
+  }
+  .for-small-screen {
+    display: flex;
+  }
+  /*.first_image {*/
+  /*  left: 42px;*/
+  /*}*/
+
+  .second_image {
+    left: 90px;
+  }
+
+  .third_image {
+    left: 4px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .close_icon {
+    right: auto;
+  }
+  .content_text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .ring_icon {
+    width: 33px;
+    height: 33px;
+  }
+  .circle_icon {
+    width: 10px;
+    height: 10px;
+  }
+  .content_text {
+    padding-top: 3px;
+  }
+  /*.first_image {*/
+  /*  left: 2px;*/
+  /*}*/
+
+  .second_image {
+    left: -4px;
+  }
+
+  .third_image {
+    left: 32px;
+  }
+}
+

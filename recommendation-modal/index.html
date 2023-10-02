@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модальное окно</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="myModal" class="modal">
+    <div class="modal_content">
+        <span class="close_icon" id="closeModal">&times;</span>
+        <div class="modal_content__text">
+            <div class="content_text__box">
+                <div class="images_container first_image">
+                    <img class="circle_icon" src="./images/circle_icon.png" alt="circle_icon">
+                    <img class="ring_icon" src="./images/ring_icon.png" alt="ring_icon">
+                </div>
+                <p class="content_text">Оповестим о выходе нового сезона</p>
+            </div>
+            <div class="content_text__box">
+                <p class="content_text">Порекомендуем<br/>похожий сериал</p>
+                <div class="images_container second_image">
+                    <img class="circle_icon" src="./images/circle_icon.png" alt="circle_icon">
+                    <img class="ring_icon" src="./images/ring_icon.png" alt="ring_icon">
+                </div>
+            </div>
+            <div class="content_text__box">
+                <div class="images_container third_image">
+                    <img class="circle_icon" src="./images/circle_icon.png" alt="circle_icon">
+                    <img class="ring_icon" src="./images/ring_icon.png" alt="ring_icon">
+                </div>
+                <p class="content_text">Не пропустишь новинки</p>
+            </div>
+        </div>
+        <div class="telegram_btn">
+            <img class="telegram_icon" src="./images/telegram_icon.svg"
+                 alt="telegram_icon">
+            <p class="telegram_text for-big-screen">Подписаться на Telegram</p>
+            <p class="telegram_text for-small-screen">Перейти на Telegram</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

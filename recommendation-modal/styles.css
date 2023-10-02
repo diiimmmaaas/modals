@@ -81,13 +81,18 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+}
+
+.emptyBlock {
   position: relative;
+  width: 17px;
 }
 
 .images_container {
   display: flex;
   align-items: center;
   position: absolute;
+  top: -6px;
 }
 
 .circle_icon {
@@ -107,26 +112,23 @@ body {
 .content_text {
   color: #FFF;
   text-align: center;
-  padding-top: 5px;
   text-transform: uppercase;
 
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-}
 
-.first_image {
-  /*left: 31px;*/
-  left: 7%;
+
+  display: flex;
 }
 
 .second_image {
-  left: -11px;
+  left: 6px;
 }
 
 .third_image {
-  left: -25px;
+  left: -9px;
 }
 
 .telegram_btn {
@@ -175,8 +177,20 @@ body {
   .modal_content {
     width: 95%;
   }
+  .content_text {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .ring_icon {
+    width: 33px;
+    height: 33px;
+  }
+  .circle_icon {
+    width: 11px;
+    height: 11px;
+  }
   .modal_content__text {
-    width: 75%;
+    width: 90%;
   }
   .telegram_btn {
     width: 267px;
@@ -191,16 +205,27 @@ body {
   .for-small-screen {
     display: flex;
   }
-  /*.first_image {*/
-  /*  left: 42px;*/
-  /*}*/
-
-  .second_image {
-    left: 90px;
+  .first_image {
+    top: -2px;
+    left: 30px;
   }
-
+  .second_image {
+    top: -2px;
+    left: 7px;
+  }
   .third_image {
-    left: 4px;
+    top: -2px;
+    left: 3px;
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+  .modal_content {
+    width: 95%;
+  }
+  .modal_content__text {
+    width: 98%;
   }
 }
 
@@ -209,30 +234,10 @@ body {
     right: auto;
   }
   .content_text {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  .ring_icon {
-    width: 33px;
-    height: 33px;
-  }
-  .circle_icon {
-    width: 10px;
-    height: 10px;
-  }
-  .content_text {
     padding-top: 3px;
   }
-  /*.first_image {*/
-  /*  left: 2px;*/
-  /*}*/
-
-  .second_image {
-    left: -4px;
-  }
-
-  .third_image {
-    left: 32px;
+  .modal_content__text {
+    gap: 20px;
   }
 }
 
